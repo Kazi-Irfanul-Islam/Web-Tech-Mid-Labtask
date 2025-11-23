@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AIUB Admission Form</title>
+
+    <meta name="author" content="Irfan" />
+    <meta
+      name="description"
+      content="Online admission form for new students applying to the AIUB."
+    />
+    <meta
+      name="keywords"
+      content="admission, university, form, student enrollment, AIUB"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <h1>AIUB Admission Form</h1>
+    <p>Please complete the form below with accurate information.</p>
+    <hr />
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullName">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          required
+          maxlength="80"
+        /><br /><br />
+
+        <label for="fatherName">Father's Name:</label><br />
+        <input
+          type="text"
+          id="fatherName"
+          name="fatherName"
+          required
+          maxlength="80"
+        /><br /><br />
+
+        <label for="motherName">Mother's Name:</label><br />
+        <input
+          type="text"
+          id="motherName"
+          name="motherName"
+          required
+          maxlength="80"
+        /><br /><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other">Other</label><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Mobile Number:</label><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          required
+          maxlength="15"
+        /><br /><br />
+
+        <label for="address">Present Address:</label><br />
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          cols="40"
+          required
+        ></textarea
+        ><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <h3>SSC / O-Level</h3>
+
+        <label for="sscInstitute">Institute Name:</label><br />
+        <input
+          type="text"
+          id="sscInstitute"
+          name="sscInstitute"
+          required
+          maxlength="100"
+        /><br /><br />
+
+        <label for="sscBoard">Board:</label><br />
+        <input
+          type="text"
+          id="sscBoard"
+          name="sscBoard"
+          required
+          maxlength="40"
+        /><br /><br />
+
+        <label for="sscYear">Passing Year:</label><br />
+        <input
+          type="number"
+          id="sscYear"
+          name="sscYear"
+          min="2000"
+          max="2030"
+          required
+        /><br /><br />
+
+        <label for="sscGpa">GPA:</label><br />
+        <input
+          type="text"
+          id="sscGpa"
+          name="sscGpa"
+          required
+          maxlength="5"
+        /><br /><br />
+
+        <hr />
+
+        <h3>HSC / A-Level</h3>
+
+        <label for="hscInstitute">Institute Name:</label><br />
+        <input
+          type="text"
+          id="hscInstitute"
+          name="hscInstitute"
+          required
+          maxlength="100"
+        /><br /><br />
+
+        <label for="hscBoard">Board:</label><br />
+        <input
+          type="text"
+          id="hscBoard"
+          name="hscBoard"
+          required
+          maxlength="40"
+        /><br /><br />
+
+        <label for="hscYear">Passing Year:</label><br />
+        <input
+          type="number"
+          id="hscYear"
+          name="hscYear"
+          min="2000"
+          max="2030"
+          required
+        /><br /><br />
+
+        <label for="hscGpa">GPA:</label><br />
+        <input
+          type="text"
+          id="hscGpa"
+          name="hscGpa"
+          required
+          maxlength="5"
+        /><br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Program Selection & Preferences</legend>
+
+        <label for="department">Preferred Department:</label><br />
+        <select id="department" name="department" required>
+          <option value="">-- Select Department --</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="BBA">BBA</option>
+          <option value="Architecture">Architecture</option></select
+        ><br /><br />
+
+        <label>Interests (You may select multiple):</label><br />
+
+        <input type="checkbox" id="prog" name="interests" value="Programming" />
+        <label for="prog">Programming</label><br />
+
+        <input
+          type="checkbox"
+          id="robotics"
+          name="interests"
+          value="Robotics"
+        />
+        <label for="robotics">Robotics</label><br />
+
+        <input type="checkbox" id="ai" name="interests" value="AI" />
+        <label for="ai">Artificial Intelligence</label><br />
+
+        <input type="checkbox" id="design" name="interests" value="Design" />
+        <label for="design">Graphic Design</label><br /><br />
+
+        <label for="intake">Preferred Intake:</label><br />
+        <select id="intake" name="intake" required>
+          <option value="">-- Select Intake --</option>
+          <option value="Spring-2025">Spring 2025</option>
+          <option value="Summer-2025">Summer 2025</option>
+          <option value="Fall-2025">Fall 2025</option></select
+        ><br /><br />
+
+        <label for="documents">Upload Necessary Documents:</label><br />
+        <input
+          type="file"
+          id="documents"
+          name="documents"
+          multiple
+          required
+        /><br />
+      </fieldset>
+
+      <br />
+
+      <button type="submit">Submit Application</button>
+      <button type="reset">Reset Form</button>
+    </form>
+  </body>
+</html>
