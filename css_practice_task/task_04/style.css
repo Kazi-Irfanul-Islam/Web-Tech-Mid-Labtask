@@ -1,0 +1,229 @@
+html,
+body {
+  background: #e3e3d8;
+  font-family: sans-serif;
+  padding: 25px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.wrapper {
+  width: 300px;
+  height: 500px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.wrapper:hover {
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.product-row .wrapper:nth-child(1) .top {
+  height: 80%;
+  width: 100%;
+  background: url("images/macbook.jpg") center/cover no-repeat;
+}
+
+.product-row .wrapper:nth-child(2) .top {
+  height: 80%;
+  width: 100%;
+  background: url("images/airpods.jpg") center/cover no-repeat;
+}
+
+.product-row .wrapper:nth-child(3) .top {
+  height: 80%;
+  width: 100%;
+  background: url("images/smartwatch.jpg") center/cover no-repeat;
+}
+
+.bottom {
+  width: 200%;
+  height: 20%;
+  transition: transform 0.5s;
+}
+
+.bottom.clicked {
+  transform: translateX(-50%);
+}
+
+.bottom h1,
+.bottom p {
+  margin: 0;
+  padding: 0;
+}
+
+.left {
+  height: 100%;
+  width: 50%;
+  background: #f4f4f4;
+  position: relative;
+  float: left;
+}
+
+.left .details {
+  padding: 20px;
+  float: left;
+  width: calc(70% - 40px);
+}
+
+.left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+  transition: background 0.5s;
+}
+
+.left .buy i {
+  font-size: 30px;
+  padding: 30px;
+  color: #254053;
+  transition: transform 0.5s;
+}
+
+.left .buy:hover {
+  background: #a6cdde;
+}
+
+.left .buy:hover i {
+  transform: translateY(5px);
+  color: #00394b;
+}
+
+.right {
+  width: 50%;
+  height: 200%;
+  float: right;
+  background: #a6cdde;
+  color: white;
+  overflow: hidden;
+}
+
+.right .details {
+  padding: 20px;
+  float: right;
+  width: calc(70% - 40px);
+}
+
+.right .done {
+  width: calc(30% - 2px);
+  height: 50%;
+  float: left;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s;
+}
+
+.right .done i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+}
+
+.right .remove {
+  width: calc(30% - 1px);
+  height: 50%;
+  float: left;
+  background: #bc3b59;
+  border-right: solid thin rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s, background 0.5s;
+}
+
+.right .remove i {
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+  transition: transform 0.5s;
+}
+
+.right .remove:hover {
+  background: #9b2847;
+}
+
+.right .remove:hover i {
+  transform: translateY(5px);
+}
+
+.right:hover .remove,
+.right:hover .done {
+  transform: translateY(-100%);
+}
+
+.inside {
+  z-index: 9;
+  background: #92879b;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+
+.inside .icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+
+.inside:hover {
+  width: 100%;
+  height: 80%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+}
+
+.inside:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+
+.inside .contents {
+  padding: 5%;
+  opacity: 0;
+  transform: translateY(-200%) scale(0.5);
+  transition: opacity 0.2s, transform 0.8s;
+}
+
+.inside:hover .contents {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.inside .contents table {
+  text-align: left;
+  width: 100%;
+  border-spacing: 30px 20px;
+}
+
+.inside .contents table,
+.inside .contents h1,
+.inside .contents p {
+  color: white;
+}
+
+.inside .contents p {
+  font-size: 20px;
+}
