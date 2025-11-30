@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(135deg, #c8f1e7, #a6ccff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+}
+
+.user-card {
+  position: relative;
+  width: 400px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.user-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.bio {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0 20px;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #00c851;
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.follow-btn {
+  background: #000;
+  color: white;
+}
+
+.profile-btn {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+}
