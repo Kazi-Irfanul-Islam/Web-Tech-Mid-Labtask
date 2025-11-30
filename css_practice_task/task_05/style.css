@@ -1,0 +1,39 @@
+.contact-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffffff;
+  border: 2px solid #0077ff;
+  padding: 15px 20px;
+  width: 180px;
+  border-radius: 10px;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.contact-widget:hover {
+  background: #0077ff;
+  color: #fff;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.contact-widget h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-widget a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-widget p {
+  margin: 5px 0;
+  font-size: 14px;
+}
