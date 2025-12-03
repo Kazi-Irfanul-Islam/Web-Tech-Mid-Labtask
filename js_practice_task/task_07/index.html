@@ -1,0 +1,29 @@
+s
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dynamic Style Control Panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Dynamic Style Control Panel</h2>
+
+      <p id="textBlock">
+        Smash the button below that does some sort of work which is written on
+        their respective button. <br />
+        SMASH!
+      </p>
+
+      <div class="btn-group">
+        <button onclick="changeBg()">Change Background Color</button>
+        <button onclick="increaseFont()">Increase Font Size</button>
+        <button onclick="centerText()">Center Text</button>
+        <button class="reset" onclick="resetStyle()">Reset Style</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
